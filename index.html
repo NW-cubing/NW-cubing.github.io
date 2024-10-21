@@ -57,6 +57,10 @@
                 background-color:white;
                 color:black;
             }
+            #cat {
+                position: absolute;
+                right: 93px;
+            }
         </style>
     </head>
     <body>
@@ -72,5 +76,21 @@
                 I have a best pop time of 2.33 seconds and I just generally love playing the position<br> I am pretty decent at coding as well as you can see by this web page you are vewing<br>
                 I have a 12.21 3x3 solve time at home and a 0.66 second 4 mover for 2x2 at home. <br> I have a Minecraft Hardcore world where I have survived over 100 days and made many usefull farms
                 </p>
+            <div>
+        <!-- Cat walking GIF from: http://www.anniemation.com/clip_art/graphics.html -->
+        <img id="cat" src="https://www.kasandbox.org/programming-images/misc/cat-walk.gif">
+    </div>
+        <script>
+      var catEl = document.getElementById("cat"); 
+      var startTime = new Date().getTime();
+      var walkTheCat = function() {
+              var currTime = new Date().getTime();
+              var secondsElapsed = ((currTime - startTime)/1000);
+              var newRight = secondsElapsed*100;
+          catEl.style.right = newRight + "px";
+          window.requestAnimationFrame(walkTheCat)
+      };
+  walkTheCat();
+        </script>
  </body>
 </html>
