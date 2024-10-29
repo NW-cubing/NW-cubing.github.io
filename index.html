@@ -2,96 +2,34 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Timothy's cubing info</title>
+        <title>Travel to SB737's hardcore Minecraft world</title>
         <style>
-            body {
-                background-color:rgb(189, 255, 251);
-                font-family:calibri;
+            ::-webkit-scrollbar {
+                width: 10px;
             }
-            p {
-                background-color:light-blue;
-                color:white;
+            ::-webkt-scrollbar-track {
+                background-color: rgb(241, 241, 250); 
+                border-radius: 10px;
             }
-            #title {
-                position:fixed;
-                right:30%;
-                top:1px;
-                background-color:rgb(66, 208, 255);
-                padding-right:5px;
-                padding-left:5px;
-                padding-bottom:2.5px;
-                padding-top:2.5px;
+            ::-webkit-scrollbar-thumb {
+                background: rgb(136, 136, 136); 
+                box-shadow: inset 0 0 5px grey;
+                border-radius: 10px;
             }
-            #cubing {
-                color:rgb(5, 130, 255);
+            ::-webkit-scrollbar-thumb:hover {
+                background: rgb(85, 85, 85);
             }
-            #links {
-                position:fixed;
-                left:2%;
-                top:300px;
-                border:3px solid black;
-                padding-right:5px;
-                padding-left:5px;
-                padding-bottom:2.5px;
-                padding-top:2.5px;
-                background-color:white;
-                font-family:monospace;
-            }
-            a:hover {
-                background-color:light-blue;
-            }
-            a:active {
-                background-color:rgb(252, 50, 50);
-                color:red;
-            }
-            #p {
-                position:absolute;
-                right:20%;
-                top:100px;
-                font-family:cursive;
-                border: 3px solid blue;
-                padding-right:5px;
-                padding-left:5px;
-                padding-bottom:2.5px;
-                padding-top:2.5px;
-                background-color:white;
-                color:black;
-            }
-            #cat {
-                position: fixed;
-                right: 93px;
-                top: 60%;
+            .sb-world-slideshow {
+                psoition: fixed;
             }
         </style>
     </head>
     <body>
-        <h1 id="title"> Timothy's <span id="cubing">Cubing and random stuff</span> info</h1>
-        <ul id="links">
-            <li><a href="https://www.worldcubeassociation.org/persons/2024KEAR01" target="_blank"> All my current competition prs</a></li>
-            <li><a href="https://www.youtube.com/channel/UCUrIcBNgiLD8e6289xnC6Jg" targe="_blank"> My cubing youtube channel</a></li>
-            <li><a href="https://cstimer.net/" target="_blank"> The best cubing training timer</a></li>
-        </ul>
-                <p id="p">Hi! My name is Timothy (or Tim if you like) and I am a speed cuber, coder, and baseball player<br> I average about 17 seconds to solve a 3x3,
-                5 to solve a 2x2, and 10 to solve a pyraminx
-                <br> I can solve other cubes as well but those are the ones I like the most<br> In baseball, I play catcher. 
-                I have a best pop time of 2.33 seconds and I just generally love playing the position<br> I am pretty decent at coding as well as you can see by this web page you are vewing<br>
-                I have a 12.21 3x3 solve time at home and a 0.66 second 4 mover for 2x2 at home. <br> I have a Minecraft Hardcore world where I have survived over 200 days and made many usefull farms
-                </p>
-            <div>
-        <!-- Cat walking GIF from: http://www.anniemation.com/clip_art/graphics.html -->
-        <img id="cat" src="https://www.kasandbox.org/programming-images/misc/cat-walk.gif">
-    </div>
+        <div class="sb-world-slideshow">
+            <img src="https://i.ytimg.com/vi/XKCPXeV25xU/maxresdefault.jpg" alt="full netherite beacon in minecraft" width="1280" hight="720">
+        </div>
+        
         <script>
-      var catEl = document.getElementById("cat"); 
-      var startTime = new Date().getTime();
-      var walkTheCat = function() {
-              var currTime = new Date().getTime();
-              var secondsElapsed = ((currTime - startTime)/1000);
-              var newRight = secondsElapsed*100;
-          catEl.style.right = newRight + "px";
-          window.requestAnimationFrame(walkTheCat)
-      };
-  walkTheCat();
         </script>
- </body>
+    </body>
 </html>
