@@ -3,8 +3,6 @@
     <head>
         <meta charset="utf-8">
         <title>Travel to Germany!</title>
-        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
         <style>
             ::-webkit-scrollbar {
                 width: 10px;
@@ -21,44 +19,31 @@
             ::-webkit-scrollbar-thumb:hover {
                 background: rgb(85, 85, 85);
             }
+            body {
+                background-image: url("https://www.worldatlas.com/img/flag/de-flag.jpg");
+            }
+            #header {
+                postiton: sticky;
+                top: 0;
+                background-color: black;
+                opacity:0.1;
+                color: white;
+                padding-left: 4000px;
+                padding-right: 4000px;
+                padding-top: 35px;
+                padding-bottom: 35px;
+                margin-top: 300px;
+                margin-bottom: 300px;
+            }
         </style>
     </head>
     <body>
-        <div class="germany-slideshow">
-            <img src="https://i.huffpost.com/gen/1492252/original.jpg" alt="Castle in Germany" width="4898" hight="3600">
-            <img src="https://i.pinimg.com/originals/6c/33/44/6c33444f70531cf14ab70bdbccd97d74.jpg" alt="circle bridge" width="1377" hight="920">
-            <img src="https://www.trafalgar.com/real-word/wp-content/uploads/sites/3/2018/02/Berlin-TV-Tower-Skyline-www.istockphoto.com_gb_photo_berlin-skyline-panorama-with-tv-tower-at-night-germany-gm516331170-88946761-bluejayphoto.jpg" alt="Berlin TV tower skyline" width="1098" hight="531">
-            <img src="https://fthmb.tqn.com/ryDmVYQC3gnNbsxrrebICHHxTbI=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/robert-harding-56a3acac5f9b58b7d0d3201b.jpg" alt="bridge leading to castle" width="960" hight="770">
-            <img src="https://www.gannett-cdn.com/-mm-/7b30c066d486747c7e6a80d56e77bd882f265303/c=0-183-1598-1086/local/-/media/2015/08/17/USATODAY/USATODAY/635754146234843047-Rothenburg-ob-der-Tauber-Copyright-Rothenburg-Tourismus-Service.jpg?width=1200" alt="cool German houses" width="1000" hight="478">
-            <img src="https://bestdestinations.co/wp-content/uploads/2020/01/periklis-lolis-Uo1cYwElmeg-unsplash-scaled.jpg" alt="Periklis Lolis in Germany" width="1560" hight="707">
-            <img src="https://i2.wp.com/travelwithme247blog.com/wp-content/uploads/2018/01/IMG_20180103_203156_768.jpg?resize=940%2C716&ssl=1" alt="winter castle" width="940" hight="716">
-        </div>
-
-        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <h1 id="header">Travel to Germany!</h1>
+        <p>
+            
+        </p>
 
         <script>
-            $(document).ready(function(){
-                $('.germany-slideshow').slick({
-                    setting-name: setting-value
-                });
-            });
-            $('.variable-width').slick({
-              dots: true,
-              infinite: true,
-              speed: 300,
-              slidesToShow: 1,
-              centerMode: true,
-              variableWidth: true
-            });
-            $('.autoplay').slick({
-              slidesToShow: 3,
-              slidesToScroll: 1,
-              autoplay: true,
-              autoplaySpeed: 4000,
-            });
         </script>
     </body>
 </html>
