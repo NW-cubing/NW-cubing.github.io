@@ -56,16 +56,137 @@
             }
             body {
                 background-image: url("https://www.publicdomainpictures.net/pictures/250000/velka/german-flag.jpg")
+            }* {box-sizing: border-box}
+            .mySlides1, .mySlides2 {display: none}
+            img {vertical-align: middle;}
+
+            /* Slideshow container */
+            .slideshow-container {
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+            }
+
+            /* Next & previous buttons */
+            .prev, .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                margin-top: -22px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+            }
+
+            /* Position the "next button" to the right */
+            .next {
+              right: 0;
+              border-radius: 3px 0 0 3px;
+            }
+
+            /* On hover, add a grey background color */
+            .prev:hover, .next:hover {
+              background-color: #f1f1f1;
+              color: black;
+            }
+            .text {
+              background-color: black;
+              color: yellow;
+              font-size: 15px;
+              padding: 8px 12px;
+              position: absolute;
+              bottom: 8px;
+              width: 100%;
+              text-align: center;
+              font-size: 30px;
             }
         </style>
     </head>
     <body>
         <h1 id="header"><span id="grey">Travel</span><span id="red"> to </span><span id="yellow">Germany! </span></h1>
-        <p class="p1">
-            
-        </p>
+        <div class="p1">
+            <p>
+                Welcome to Germany! Germany has many tourist attractions for anyone who may be <br>
+                considering visiting. Germany also has a rich history, beautiful castles, and great <br>
+                food. Speaking of food, here are some popular German foods and their German names.
+            </p>
+            <div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="https://images.eatsmarter.de/sites/default/files/styles/facebook/public/klassischer-kaesekuchen-55477.jpg" alt="Käsekuchen" style="width:100%">  
+    <div class="text">Käsekuchen: Kind of like cheesecake</div>
+    </div>
+
+  <div class="mySlides1">
+    <img src="https://www.daskochrezept.de/sites/daskochrezept.de/files/styles/facebook/public/2021-06/schwarzwaelderkirschtorte_original_2.jpg?h=4521fff0&itok=plydTvT_" alt="Schwarzwälder Kirschtorte" style="width:100%">
+    <div class="text">Schwarzwälder Kirschtort or Black Forest cherry cake</div>
+    </div>
+
+  <div class="mySlides1">
+    <img src="https://www.cookbakery.de/wp-content/uploads/2017/10/IMG_2828-1.jpg" alt="Bienenstich" style="width:100%">
+    <div class="text">Bienenstich is basacly a honey cake</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+            <p>
+                Now, after eating those wonderful deserts, what is there to do now? <br> 
+                Well, I promise you, there is still lots to do. you can go sight <br>
+                seeing or go to a Fußball (soccer) game, which is Germany's most <br>
+                popular sport.
+            </p>
+            <div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="https://stadiumdb.com/pictures/stadiums/ger/westfalenstadion/westfalenstadion46.jpg" alt="Signal Iduna Park, Dortmund, Germany" style="width:100%">
+    <div class="text">Germany's largest Fußball field</div>
+  </div>
+
+  <div class="mySlides2">
+    <img src="https://www.bondguide.de/wp-content/uploads/2019/12/AdobeStock_63022173-scaled.jpeg" alt="berlin skyline" style="width:100%">
+    <div class="text">The amazing Berlin skyline</div>
+  </div>
+
+  <div class="mySlides2">
+    <img src="https://happytowander.com/wp-content/uploads/2016/03/Happy-to-Wander-Neuschwanstein-and-Fussen-0786.jpg" alt="german castle" style="width:100%">
+    <div class="text">One of the many beautiful German castles</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+            <p>
+	I hope all of this information has made you at least appreciate <br>
+    all the amazing things Germany has to offer. Thank you for reading!<br>
+    														
+                                                              -Himothy K
+</p>
+        </div>
 
         <script>
+            let slideIndex = [1,1];
+            let slideId = ["mySlides1", "mySlides2"]
+            showSlides(1, 0);
+            showSlides(1, 1);
+
+            function plusSlides(n, no) {
+              showSlides(slideIndex[no] += n, no);
+            }
+
+            function showSlides(n, no) {
+              let i;
+              let x = document.getElementsByClassName(slideId[no]);
+              if (n > x.length) {slideIndex[no] = 1}    
+              if (n < 1) {slideIndex[no] = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex[no]-1].style.display = "block";  
+            }
         </script>
     </body>
 </html>
