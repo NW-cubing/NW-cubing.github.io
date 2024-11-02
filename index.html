@@ -19,20 +19,17 @@
             ::-webkit-scrollbar-thumb:hover {
                 background: rgb(85, 85, 85);
             }
-            div.header {
-                postiton: sticky;
-                top: 0;
-		text-align: center;
-                background-color: black;
-		font-size: 50px;
-                padding-left: 500px;
-                padding-right: 500px;
-                padding-top: 35px;
-                padding-bottom: 35px;
-                margin-top: 300px;
-                margin-bottom: 300px;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            }
+	    div.sticky {
+  		position: sticky;
+  		top: 0;
+  		background-color: black;
+  		padding-top: 10px;
+  		padding-bottom: 10px;
+  		padding-right: 300px;
+  		padding-left: 300px;
+  		font-size: 20px;
+  		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	    }
             .main-content {
                 text-align: center;
                 position: absolute;
@@ -129,9 +126,9 @@
         </style>
     </head>
     <body>
-	<div class="header">
-		<span id="grey">Travel</span><span id="red"> to </span><span id="yellow">Germany! </span>
-	</div>
+	    
+	<div class="sticky"><span id="grey">Travel</span> <span id="red">to</span> <span id="yellow">Germany!</span></div>
+	    
         <div class="main-content">
             <p class="paragraph">
                 Welcome to Germany! Germany has many tourist attractions for anyone  
